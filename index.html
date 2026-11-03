@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101814" />
+    <meta
+      name="description"
+      content="An independently drawn Frogger arcade study. First playable traffic prototype."
+    />
+    <title>Frogger · Arcade study</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="eyebrow">THE ARCADE STUDIES / 001</span>
+        <h1>FROGGER<span>Original pixels. Old-school reflexes.</span></h1>
+        <p>One small frog. One very busy road.</p>
+      </header>
+      <section class="cabinet" aria-label="Frogger game">
+        <div class="cabinet-top">
+          <span>TRAFFIC STUDY</span><span>01 / PROTOTYPE</span>
+        </div>
+        <canvas
+          id="game"
+          tabindex="0"
+          aria-label="Frogger traffic prototype. Use arrow keys to reach the upper verge."
+          >Your browser needs Canvas support to play.</canvas
+        >
+        <div class="cabinet-bottom">
+          <span class="light"></span
+          ><span id="status" role="status">Ready. Press Enter or Start.</span
+          ><button id="start">START GAME ↗</button>
+        </div>
+      </section>
+      <section class="instructions">
+        <div>
+          <span class="eyebrow">HOW TO PLAY</span>
+          <p>
+            Arrow keys to hop. Reach the upper verge.<br />Every new forward
+            step earns 10 points.
+          </p>
+        </div>
+        <div>
+          <span class="eyebrow">TAKE YOUR TIME</span>
+          <p>
+            Three lives. Watch the gaps.<br />Enter or Space to start again.
+          </p>
+        </div>
+      </section>
+      <nav class="dpad" aria-label="Movement controls">
+        <button data-direction="up" aria-label="Hop up">↑</button>
+        <div>
+          <button data-direction="left" aria-label="Hop left">←</button
+          ><button data-direction="down" aria-label="Hop down">↓</button
+          ><button data-direction="right" aria-label="Hop right">→</button>
+        </div>
+      </nav>
+      <footer>
+        INDEPENDENT CANVAS RECREATION
+        <span>ORIGINAL ART · NO COMMERCIAL ASSETS</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
