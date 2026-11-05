@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#101814" />
     <meta
       name="description"
-      content="An independently drawn Frogger arcade study. First playable traffic prototype."
+      content="An independently drawn Frogger arcade study. Five roads, five river lanes and five homes."
     />
     <title>Frogger · Arcade study</title>
   </head>
@@ -15,37 +15,23 @@
       <header>
         <span class="eyebrow">THE ARCADE STUDIES / 001</span>
         <h1>FROGGER<span>Original pixels. Old-school reflexes.</span></h1>
-        <p>One small frog. One very busy road.</p>
+        <p>One small frog. A road, a river, five homes.</p>
       </header>
       <section class="cabinet" aria-label="Frogger game">
         <div class="cabinet-top">
-          <span>TRAFFIC STUDY</span><span>01 / PROTOTYPE</span>
+          <span>ROAD &amp; RIVER</span><span>ARCADE EDITION</span>
         </div>
         <canvas
           id="game"
           tabindex="0"
-          aria-label="Frogger traffic prototype. Use arrow keys to reach the upper verge."
+          aria-label="Frogger. Use arrow keys to cross traffic, ride logs and turtles, and fill five homes."
           >Your browser needs Canvas support to play.</canvas
         >
         <div class="cabinet-bottom">
           <span class="light"></span
           ><span id="status" role="status">Ready. Press Enter or Start.</span
+          ><button id="sound" aria-pressed="false">SOUND OFF</button
           ><button id="start">START GAME ↗</button>
-        </div>
-      </section>
-      <section class="instructions">
-        <div>
-          <span class="eyebrow">HOW TO PLAY</span>
-          <p>
-            Arrow keys to hop. Reach the upper verge.<br />Every new forward
-            step earns 10 points.
-          </p>
-        </div>
-        <div>
-          <span class="eyebrow">TAKE YOUR TIME</span>
-          <p>
-            Three lives. Watch the gaps.<br />Enter or Space to start again.
-          </p>
         </div>
       </section>
       <nav class="dpad" aria-label="Movement controls">
@@ -56,6 +42,24 @@
           ><button data-direction="right" aria-label="Hop right">→</button>
         </div>
       </nav>
+      <section class="instructions">
+        <div>
+          <span class="eyebrow">HOW TO PLAY</span>
+          <p>
+            Arrow keys to hop. Cross five traffic lanes.<br />Ride logs and
+            turtles to five empty homes.
+          </p>
+        </div>
+        <div>
+          <span class="eyebrow">TAKE YOUR TIME</span>
+          <p>
+            Three lives. Sixty seconds per frog.<br />Blue turtles are about to
+            dive. Keep moving!
+          </p>
+        </div>
+      </section>
+      <output id="readout" class="readout" aria-label="Game scores"></output>
+
       <footer>
         INDEPENDENT CANVAS RECREATION
         <span>ORIGINAL ART · NO COMMERCIAL ASSETS</span>

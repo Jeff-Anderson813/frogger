@@ -7,7 +7,7 @@ it.each([30, 60, 120, 144])("runs equal simulation time at %i Hz", (hz) => {
   const game = new Game();
   game.start();
   for (let i = 0; i < hz; i++) clock.advance(1 / hz, (dt) => game.update(dt));
-  expect(game.vehicles[0].x).toBeCloseTo(-6);
+  expect(game.actors[0].x).toBeCloseTo(-2);
 });
 it("caps resume delays rather than fast-forwarding traffic", () => {
   const clock = new FixedClock();

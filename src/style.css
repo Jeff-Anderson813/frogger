@@ -50,6 +50,8 @@ header p {
   background: #151f19;
   box-shadow: 0 18px 70px #0005;
   padding: 0 22px;
+  width: min(100%, calc(68svh * 208 / 272 + 44px));
+  margin-inline: auto;
 }
 .cabinet-top {
   display: flex;
@@ -62,10 +64,10 @@ header p {
 canvas {
   display: block;
   width: 100%;
-  aspect-ratio: 208/224;
+  aspect-ratio: 208/272;
   image-rendering: pixelated;
   outline-offset: 4px;
-  max-height: 65vh;
+  height: auto;
   object-fit: contain;
   background: #101814;
 }
@@ -167,5 +169,30 @@ footer {
   }
   .dpad {
     display: block;
+  }
+}
+
+.readout {
+  display: block;
+  font-size: 11px;
+  color: #a5b49c;
+  text-align: center;
+  margin: 14px 0;
+}
+#sound {
+  font-size: 9px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+#start {
+  margin-left: 0;
+}
+@media (max-width: 520px) {
+  #status {
+    max-width: none;
+    flex: 1 1 80%;
+  }
+  #sound {
+    margin-left: 15px;
   }
 }
