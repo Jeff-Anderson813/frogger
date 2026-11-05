@@ -48,7 +48,10 @@ A 120 Hz fixed simulation prevents display refresh rate from changing traffic sp
 Set repository Settings → Pages → Source to **GitHub Actions**.
 After reviewing and merging the development branch into `main`, the Pages workflow
 checks the exact source, builds and uploads `dist`, then deploys only if checks pass.
-The expected address is `https://<account>.github.io/<repository>/`.
+An explicitly authorized release can also be published with the GitHub Pages workflow's
+Run workflow action, selecting the reviewed source branch. The same checks run before
+publishing, so the initial release does not require a merge into `main`.
+The playable address is https://jeff-anderson813.github.io/frogger/.
 Vite emits relative asset paths (`base: './'`) for repository hosting.
 PRs and development-branch pushes run CI without deploying.
 Repository creation, source push and CI do not themselves activate Pages.
